@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27F176626F11C167F796E4AC /* Pods_JenkinsTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB401CFF3EA7784525AEE1CA /* Pods_JenkinsTest.framework */; };
 		9905B47D27045A8A00653610 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9905B47C27045A8A00653610 /* AppDelegate.m */; };
 		9905B48027045A8A00653610 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9905B47F27045A8A00653610 /* SceneDelegate.m */; };
 		9905B48327045A8A00653610 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9905B48227045A8A00653610 /* ViewController.m */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		540A6974D25E5ABEF056CB50 /* Pods-JenkinsTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JenkinsTest.debug.xcconfig"; path = "Target Support Files/Pods-JenkinsTest/Pods-JenkinsTest.debug.xcconfig"; sourceTree = "<group>"; };
+		5DD27FF585F1888B90BEC3BA /* Pods-JenkinsTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JenkinsTest.release.xcconfig"; path = "Target Support Files/Pods-JenkinsTest/Pods-JenkinsTest.release.xcconfig"; sourceTree = "<group>"; };
 		9905B47827045A8A00653610 /* JenkinsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JenkinsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9905B47B27045A8A00653610 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9905B47C27045A8A00653610 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +32,7 @@
 		9905B48A27045A8D00653610 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9905B48C27045A8D00653610 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9905B48D27045A8D00653610 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DB401CFF3EA7784525AEE1CA /* Pods_JenkinsTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JenkinsTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27F176626F11C167F796E4AC /* Pods_JenkinsTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +52,8 @@
 			children = (
 				9905B47A27045A8A00653610 /* JenkinsTest */,
 				9905B47927045A8A00653610 /* Products */,
+				DFDCCA29CFCD8F92CA92FB58 /* Pods */,
+				BA6BB2F843D73BDEB6824F7D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +83,24 @@
 			path = JenkinsTest;
 			sourceTree = "<group>";
 		};
+		BA6BB2F843D73BDEB6824F7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB401CFF3EA7784525AEE1CA /* Pods_JenkinsTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DFDCCA29CFCD8F92CA92FB58 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				540A6974D25E5ABEF056CB50 /* Pods-JenkinsTest.debug.xcconfig */,
+				5DD27FF585F1888B90BEC3BA /* Pods-JenkinsTest.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +108,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9905B49127045A8D00653610 /* Build configuration list for PBXNativeTarget "JenkinsTest" */;
 			buildPhases = (
+				5B476F5DCF13EECBC180400F /* [CP] Check Pods Manifest.lock */,
 				9905B47427045A8A00653610 /* Sources */,
 				9905B47527045A8A00653610 /* Frameworks */,
 				9905B47627045A8A00653610 /* Resources */,
+				44C3C3C9A7B2E2884D98B247 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -139,6 +166,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		44C3C3C9A7B2E2884D98B247 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JenkinsTest/Pods-JenkinsTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JenkinsTest/Pods-JenkinsTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JenkinsTest/Pods-JenkinsTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B476F5DCF13EECBC180400F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JenkinsTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9905B47427045A8A00653610 /* Sources */ = {
@@ -288,6 +357,7 @@
 		};
 		9905B49227045A8D00653610 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 540A6974D25E5ABEF056CB50 /* Pods-JenkinsTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -306,6 +376,7 @@
 		};
 		9905B49327045A8D00653610 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DD27FF585F1888B90BEC3BA /* Pods-JenkinsTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
